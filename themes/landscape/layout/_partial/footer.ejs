@@ -1,0 +1,16 @@
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> , and 
+      Hosted by <a href="http://github.com" target="_blank">GitHub</a>
+      <!-- 51.la begin-->
+      <script language="javascript" type="text/javascript" src="http://js.users.51.la/18208025.js"></script>
+<noscript><a href="http://www.51.la/?18208025" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/18208025.asp" style="border:none" /></a></noscript>
+		<!-- 51.la end-->
+    </div>
+  </div>
+</footer>
